@@ -1,0 +1,13 @@
+Status	SRR453566.sorted.bam	SRR453567.sorted.bam	SRR453568.sorted.bam	SRR453569.sorted.bam	SRR453570.sorted.bam	SRR453571.sorted.bam
+Assigned	4568791	6257960	4527147	3077143	3873786	4907344
+Unassigned_Unmapped	114233	140531	96519	181908	1935999	229888
+Unassigned_MappingQuality	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0
+Unassigned_MultiMapping	814087	1126629	794069	598424	713577	914200
+Unassigned_Secondary	0	0	0	0	0	0
+Unassigned_Nonjunction	0	0	0	0	0	0
+Unassigned_NoFeatures	122392	152780	105634	112410	133839	163247
+Unassigned_Overlapping_Length	0	0	0	0	0	0
+Unassigned_Ambiguity	31275	37002	23914	20733	33704	33200
