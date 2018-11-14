@@ -5,7 +5,6 @@ with open(input) as f:
         if line.startswith("#"):
             continue
         s=line.split("\t")
-
         items=s[8].split(";")
         for item in items:
             if item.startswith("product="):
