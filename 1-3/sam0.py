@@ -1,5 +1,4 @@
 input="../1-1/sam/SRR453566.sam.aa"
-
 dict={}
 with open(input) as f:
     for line in f:
@@ -13,6 +12,5 @@ with open(input) as f:
             dict[flg]+=1
         else :
             dict[flg]=1
-
 for k, v in dict.items():
     print(k+"\t"+str(v))
