@@ -1,5 +1,5 @@
 input="../1-1/sam/SRR453566.sam.aa"
-list=[]
+readList=[]
 with open(input) as f:
     for line in f:
         line=line.rstrip()
@@ -8,6 +8,6 @@ with open(input) as f:
         s=line.split("\t")
         FLG=int(s[1])
         if FLG & 4:
-            list.append(s[0])
-for item in list:
+            readList.append(s[0])
+for item in readList:
     print(item)
