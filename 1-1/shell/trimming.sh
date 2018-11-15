@@ -11,7 +11,6 @@ ACESSIONS=(453566 453567 453568 453569 453570 453571)
 no=`expr ${SGE_TASK_ID} - 1`
 
 NUM=${ACESSIONS[${no}]}
-PREFIX=SRR${ACESSIONS[${no}]}
 
 export PATH=/usr/local/pkg/FastQC/v0.11.8:$PATH
 export PATH=/home/yanakamu/tools/Trimmomatic-0.38:$PATH
@@ -22,7 +21,7 @@ java -jar -Xmx512m ~/tools/Trimmomatic-0.38/trimmomatic-0.38.jar \
    PE                     \
    -threads ${NSLOTS}         \
    -phred33               \
-   -trimlog log1.txt \
+   -trimlog log_SRR${NUM}.txt \
    SRR${NUM}_1.fastq.gz  \
    SRR${NUM}_2.fastq.gz  \
    paired_SRR${NUM}_1.trim.fastq.gz   \
@@ -38,4 +37,3 @@ java -jar -Xmx512m ~/tools/Trimmomatic-0.38/trimmomatic-0.38.jar \
 
 fastqc --nogroup -o ./FastQC paired_SRR${NUM}_1.trim.fastq.gz
 fastqc --nogroup -o ./FastQC paired_SRR${NUM}_2.trim.fastq.gz
-
