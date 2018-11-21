@@ -16,4 +16,4 @@
 
 【11月21日；3日目】  
 * 10：00～11:30 多変量解析（PCA, MDS, クラスタリング等) (遺伝研・東)
-* 11:30～13：00　　[人工知能・機械学習入門](https://github.com/HumanomeLab/mlcourse) (産総研/ヒューマノーム・瀬々)
+* 11:30～13：00　　[人工知能・機械学習入門](https://github.com/HumanomeLab/mlcourse) [スライド](https://www.dropbox.com/s/ylg77wjqookgp7z/20181121nig_ml.pdf?dl=0)(産総研/ヒューマノーム・瀬々)
