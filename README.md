@@ -22,4 +22,4 @@
 
 【11月21日；3日目】  
 * 10：00～11：30　[3-1 多変量解析（PCA, MDS, クラスタリング等)](https://github.com/genome-sci/python_bioinfo_2018/tree/master/3-1) (遺伝研・東光一)
-* 11：30～13：00　[人工知能・機械学習入門　(別レポジトリ)](https://github.com/HumanomeLab/mlcourse) [スライド (Dropbox)](https://www.dropbox.com/s/ylg77wjqookgp7z/20181121nig_ml.pdf?dl=0)(産総研/株式会社ヒューマノーム研究所・瀬々潤)
+* 11：30～13：00　[人工知能・機械学習入門　(別レポジトリ)](https://github.com/HumanomeLab/mlcourse) と [スライド (Dropbox)](https://www.dropbox.com/s/ylg77wjqookgp7z/20181121nig_ml.pdf?dl=0)(産総研/株式会社ヒューマノーム研究所・瀬々潤)
