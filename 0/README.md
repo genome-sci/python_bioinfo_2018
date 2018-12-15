@@ -49,18 +49,18 @@ VirtualBox ウェブサイトより[ダウンロード](https://www.virtualbox.o
 
 ユーザー名、パスワード等は任意に設定する。
 
-* 1.7	インストールが終了したら、指示に従って一旦再起動する
+### 1.7	インストールが終了したら、指示に従って一旦再起動する
 「Please remove the installation medium, then reboot」という黒い画面になった場合には、VirtualBoxの画面上部のメニューから「仮想マシン」→「リセット」を選択して再起動を行う。
 
 場合によってはVirtualBoxの画面上部のメニューから、「デバイス」→「光学ドライブ」→「仮想ドライブからディスクを除去」を行い、手動でインストーラのディスクイメージを除去する。(1.5の指示通り操作を行っていればおそらく自動的に除去されているはず)
 
-* 1.8	初期設定など
+### 1.8	初期設定など
 再起動が終わりデスクトップが表示されたら端末(ターミナル)を開き、下記の操作を実行する。
 ```bash
-gitコマンドのインストール
+#gitコマンドのインストール
 sudo apt install git
-(管理者用パスワードを要求されますので、最初にユーザーを作成したときに指定したパスワードを入力してください)
-javaのインストール
+#(管理者用パスワードを要求されるので、最初にユーザーを作成したときに指定したパスワードを入力)
+#javaのインストール
 sudo apt install default-jre 
 ```
 端末 (ターミナル) とテキストエディタは頻繁に使うので画面左のLauncherにお気に入りとして登録しておくとよい。
@@ -68,30 +68,39 @@ sudo apt install default-jre
 Ubuntu の基本的な操作方法については
 [Sickly Life Blog](https://sicklylife.jp/ubuntu/tsukaikata/usage.html)などを参照 
 
-2.	Python (Anaconda) のインストール
+## 2.	Python (Anaconda) のインストール
 下記の操作は VirtualBox の Ubuntu 上で行います。
-参考) https://pythondatascience.plavox.info/pythonのインストール/anaconda-ubuntu-linux  (Takekatsu Hiramura氏のPythonでデータサイエンスより)
+(参考)[Takekatsu Hiramura氏のPythonでデータサイエンス](https://pythondatascience.plavox.info/pythonのインストール/anaconda-ubuntu-linux)
 
-2.1	インストーラーの取得
-画面左のLauncherからFireFox (webブラウザ) を起動し、
-https://anaconda.org から Linux 版のPython 3系のインストーラーを取得する。最新版は Python 3.7 (Anaconda のバージョンは5.3.0)。
+### 2.1	インストーラーの取得
+画面左のLauncherからFireFoxを起動し、[https://anaconda.org](https://anaconda.org) から Linux 版のPython 3系のインストーラーを取得する。2018年10月時点の最新版は Python 3.7 (Anaconda のバージョンは5.3.0)。
+
 コマンドで取得するなら、
-$ wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh
-2.2	Anacondaのインストール
+```bash
+wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh
+```
+### 2.2	Anacondaのインストール
 端末を開き、インストーラをダウンロードしたディレクトリに移動し、
-$ sh Anaconda3-5.3.0-Linux-x86_64.sh
-を実行する。
-途中でインストール場所等を聞かれるが、デフォルトの設定通りでよい。
+```bash
+sh Anaconda3-5.3.0-Linux-x86_64.sh
+```
+を実行する。途中でインストール場所等を聞かれるが、デフォルトの設定通りでよい。
+
 インストールの最後の方にAnacondaのインストールディレクトリをpathに追加するか聞かれるので yes と答える。(設定は新しいターミナルウィンドウを開いた後に有効になります)
+
 インストール後に、Microsoft 製のプログラミング用エディタ Visual Studio Code をインストールするか聞かれる。講習では不要なので、インストールは任意で。
-2.3	Pythonの追加モジュールをインストール
-pip (pythonのパッケージマネージャ) の本体をアップデート
+
+### 2.3	Pythonの追加モジュールをインストール
+```bash
+#pip (pythonのパッケージマネージャ) の本体をアップデート
 pip install --upgrade pip
-
-Biopython インストール:
-	$ pip install biopython
-bcbio-gff インストール:
-	$ pip install bcbio-gff
-
+#gccインストール
+sudo apt install build-essential
+#Biopython インストール:
+pip install biopython
+#bcbio-gff インストール:
+pip install bcbio-gff
+```
 注) pandas, matplotlib などそれ以外のモジュールは Anaconda を導入した場合は、インストール済みです。
 
+講習を始める前の準備としては以上になります。
