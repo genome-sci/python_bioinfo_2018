@@ -28,8 +28,6 @@ VirtualBox ウェブサイトより[ダウンロード](https://www.virtualbox.o
 
 「日本語 Remix イメージのダウンロード」に進み、最新版の ISO イメージをダウンロードする。2018.10現在の最新版は 18.04.1
 
-最新版ISOイメージへの[直リンク](http://cdimage.ubuntulinux.jp/releases/18.04.1/ubuntu-ja-18.04.1-desktop-amd64.iso)
-
 ### 1.4	VirtualBox を起動し、「新規」ボタンを押して新規環境の追加を行う
 -	「名前」は任意。本文書では “ubuntu_python_lecture” とする。
 -	「タイプ」、「バージョン」は、”Linux”, “Ubuntu (64-bit)” を指定。
