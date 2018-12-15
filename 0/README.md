@@ -18,13 +18,13 @@
 
 以下の手順は Macintosh での操作を想定しています。各手順の詳細については参考サイト等を参照してください。
 
-1.	VirtualBox および Ubuntu 仮想マシンの作成
+## 1.	VirtualBox および Ubuntu 仮想マシンの作成
 
 (参考サイト) [仮想化アプリを使ってWindows 10にUbuntu Desktopをインストールしよう](https://news.mynavi.jp/article/liunx_win-3/)  (マイナビニュースWebページより)
 
-* 1.1	VirtualBox 本体のインストーラの取得
+### 1.1	VirtualBox 本体のインストーラの取得
 VirtualBox ウェブサイトより[ダウンロード](https://www.virtualbox.org)
-* 1.2	インストーラの指示に従ってインストールする
+### 1.2	インストーラの指示に従ってインストールする
 * 1.3	Ubuntu のディスクイメージの[取得](https://www.ubuntulinux.jp/download)
 
 「日本語 Remix イメージのダウンロード」に進み、最新版の ISO イメージをダウンロードする。2018.10現在の最新版は 18.04.1
@@ -64,8 +64,9 @@ javaのインストール
 sudo apt install default-jre 
 ```
 端末 (ターミナル) とテキストエディタは頻繁に使うので画面左のLauncherにお気に入りとして登録しておくとよい。
+
 Ubuntu の基本的な操作方法については
-https://sicklylife.jp/ubuntu/tsukaikata/usage.html (Sickly Life Blog より) などを参照 
+[Sickly Life Blog](https://sicklylife.jp/ubuntu/tsukaikata/usage.html)などを参照 
 
 2.	Python (Anaconda) のインストール
 下記の操作は VirtualBox の Ubuntu 上で行います。
