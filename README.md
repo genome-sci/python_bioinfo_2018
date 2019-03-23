@@ -4,7 +4,7 @@
 
 なお、講習を始める前にPC上にPython等の環境構築をする必要があります。
 環境構築については、[0 事前準備](https://github.com/genome-sci/python_bioinfo_2018/tree/master/0)のページを参考にしてください。
-
+各講習の動画は[コチラ](https://www.genome-sci.jp/lecture20181st)
 
 ## 講習会スケジュール
 【11月19日；1日目】  
